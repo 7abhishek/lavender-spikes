@@ -21,23 +21,17 @@ export default ({allPostsData}) => {
         <title>{siteTitle}</title>
       </Head>
       <section className={utilStyles.headingMd}>
-        <p>{' '} Software Engineer, Drone enthusiast and Food lover! </p>       
+        <p>{' '} Software Engineer | Drone enthusiast | Food lover | Traveller  </p>       
       </section>
 
       <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
         <h2 className={utilStyles.headingLg}>Blog</h2>
         <ul className={utilStyles.list}>
-          {allPostsData.map(({ id, date, title }) => (
-            <li className={utilStyles.listItem} key={id}>
-              <Link href={`/posts/${id}`}>
-                <a>{title}</a>
-              </Link>
-              <br />
-              <small className={utilStyles.lightText}>
-                <Date dateString={date} />
-              </small>
-            </li>
-          ))}
+        <li> 
+          <Link href="https://abhishekuc.medium.com/testing-in-go-part-1-9fd9963f6600">
+               <a>Unit Testing in Go</a>
+          </Link>
+        </li>         
         </ul>
       </section>
     </Layout>
